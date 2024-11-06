@@ -1,0 +1,1 @@
+This code organizes and sends Secret Santa messages through WhatsApp. It reads an Excel file into a dictionary, cleans and formats phone numbers and text, and creates random gift-giving pairs using make_pairs. For each pair, it crafts a personalized message, then sends it instantly using pywhatkit and pyautogui.
