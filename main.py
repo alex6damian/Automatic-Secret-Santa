@@ -30,11 +30,11 @@ def convert_excel_to_dict():
 
         # Make pairs
         pairs=make_pairs.make_pairs(data_dict)
-        
+
         # Extract phone numbers
         phone_numbers = []
         for elem in pairs:
-            phone_numbers.append(elem["Telefon"])
+            phone_numbers.append(elem[0]["Telefon"])
         
         # Send the messages
         send.send_msg(phone_numbers, pairs)
